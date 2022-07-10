@@ -132,19 +132,18 @@ const StyledLink = styled.div`
   align-items: center;
   ${media.tablet`display: none;`};
 `;
-const StyledList = styled.ol`
+const StyledList = styled.ul`
   ${mixins.flexBetween};
   padding: 0;
   margin: 0;
   list-style: none;
 `;
-const StyledListItem = styled.li`
+const StyledListItem = styled.ul`
   margin: 0 10px;
   position: relative;
   font-size: ${fontSizes.smish};
   counter-increment: item 1;
   &:before {
-    content: '0' counter(item) '.';
     text-align: right;
     color: ${colors.green};
     font-size: ${fontSizes.xs};

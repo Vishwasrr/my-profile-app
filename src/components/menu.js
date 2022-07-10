@@ -44,17 +44,16 @@ const NavLinks = styled.nav`
   text-align: center;
   color: ${colors.lightestSlate};
 `;
-const NavList = styled.ol`
+const NavList = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
   width: 100%;
 `;
-const NavListItem = styled.li`
+const NavListItem = styled.ul`
   margin: 0 auto 20px;
   position: relative;
   font-size: ${fontSizes.lg};
-  counter-increment: item 1;
   ${media.thone`
     margin: 0 auto 10px;
     font-size: ${fontSizes.md};
@@ -62,7 +61,6 @@ const NavListItem = styled.li`
   ${media.tiny`font-size: ${fontSizes.smish};`};
   &:before {
     display: block;
-    content: '0' counter(item) '.';
     color: ${colors.green};
     font-size: ${fontSizes.sm};
     margin-bottom: 5px;
@@ -108,7 +106,7 @@ const Menu = ({ menuOpen, toggleMenu }) => {
               ))}
           </NavList>
           <ResumeLink
-            href="/https://drive.google.com/file/d/1sx8nzg3UgDlp0nHiBAdArMbc2xmfd2ND/view?usp=sharing.pdf"
+            href="https://drive.google.com/file/d/1MebEnKmtdyKgk3zEM2hYF7E2rM0_xIYw/view?usp=sharing"
             target="_blank"
             rel="nofollow noopener noreferrer">
             Resume
